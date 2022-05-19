@@ -10,4 +10,4 @@ You'll need python 3.7+ in your target system in order to start the scripts
 3. Start the script with required argument switches and it'll simulate the attack for you
 
 ## Supported Techniques
-0. None
+1. TA0003-T1546.002
