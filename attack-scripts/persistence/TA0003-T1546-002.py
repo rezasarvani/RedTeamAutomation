@@ -86,8 +86,8 @@ if options.cleanup:
     print(f"[+] Command: {command}")
     execute(command)
 
-    print(f"[*] Making screensaver secure (Require Password To Unlock). ({current_time()})")
-    command = rf'reg add "HKCU\Control Panel\Desktop" /v "ScreenSaverIsSecure" /t REG_SZ /d "1" /f'
+    print(f"[*] Making screensaver insecure (Does Not Require Password To Unlock). ({current_time()})")
+    command = rf'reg add "HKCU\Control Panel\Desktop" /v "ScreenSaverIsSecure" /t REG_SZ /d "0" /f'
     print(f"[+] Command: {command}")
     execute(command)
 
